@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
@@ -28,13 +28,22 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo1} alt={logo1} className="w-9 h-9 object-contain" />
+          {/* <img
+            src={logo1}
+            alt={logo1}
+            className={`
+            ${
+              theme === "dark" ? "filter brightness-0 invert" : "text-black-100"
+            }
+               w-10 h-10 object-contain
+              `}
+          /> */}
           <p
             className={`${
               theme === "dark" ? "text-white" : "text-black-100"
             } text-[18px] font-bold cursor-pointer flex`}
           >
-            Aleksei &nbsp;
+            Aleksei Vlasov &nbsp;
             <span className="sm:block hidden"> | Frontend Developer</span>
           </p>
         </Link>
@@ -42,22 +51,16 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <li
               key={link.id}
-              // className={`${
-              //   active === link.title
-              //     ? `${theme === "dark" ? "text-white" : "text-black"}`
-              //     : "text-secondary"
-              // } hover:${
-              //   theme === "dark" ? "text-white" : "text-black"
-              // } text-[18px] font-medium cursor-pointer`}
-              className={`
-  ${
-    active === link.title
-      ? `${theme === "dark" ? "text-white" : "text-black"}`
-      : "text-secondary"
-  }
-  hover:${theme === "dark" ? "text-white" : "text-black-200"}
-  text-[18px] font-medium cursor-pointer
-`}
+              className={`${
+                active === link.title
+                  ? `${theme === "dark" ? "text-white" : "text-black"}`
+                  : `${
+                      theme === "dark"
+                        ? "text-secondary"
+                        : "text-secondary-light-theme"
+                    }`
+              } ${theme === "dark" ? "hover:text-white" : "hover:text-black"}
+                 text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}>{link.title}</a>
@@ -68,7 +71,11 @@ const Navbar = () => {
           <img
             src={toggle ? close : menu}
             alt={menu}
-            className="w-[28px] h-[28px] object-contain cursor-pointer"
+            className={`${
+              theme === "light"
+                ? "w-[28px] h-[28px] object-contain cursor-pointer filter brightness-0"
+                : "w-[28px] h-[28px] object-contain cursor-pointer"
+            }`}
             onClick={() => setToggle(!toggle)}
           />
           <div

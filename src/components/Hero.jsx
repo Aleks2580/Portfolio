@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
-
+import { useContext } from "react";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { ThemeContext } from "../App";
 
 const Hero = () => {
+  const { theme } = useContext(ThemeContext);
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
@@ -14,10 +16,21 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1
+            className={`${
+              theme === "dark"
+                ? `${styles.heroHeadText}`
+                : `${styles.heroHeadTextLightTheme}`
+            }
+            `}
+          >
             Hi, I&apos;m <span className="text-[#915eff]">Aleksei</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p
+            className={`${styles.heroSubText} mt-2 ${
+              theme === "dark" ? "text-white-100" : "text-black-100"
+            }`}
+          >
             I strive to create software that is
             <br className="sm:block hidden" /> accessible, efficient, and
             enjoyable for all users

@@ -1,4 +1,3 @@
-import React from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
@@ -6,13 +5,18 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
+import { useContext } from "react";
+import { ThemeContext } from "../App";
 
 const ServiceCard = ({ index, icon, title }) => {
+  const { theme } = useContext(ThemeContext);
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        className={`w-full green-pink-gradient p-[1px] rounded-[20px] ${
+          theme === "dark" ? "shadow-card" : "shadow-cardLightTheme"
+        }`}
       >
         <div
           options={{ max: 45, scale: 1, speed: 450 }}
@@ -29,16 +33,36 @@ const ServiceCard = ({ index, icon, title }) => {
 };
 
 const About = () => {
+  const { theme } = useContext(ThemeContext);
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        {/* <p className={styles.sectionSubText}>Introduction</p> */}
+        <p
+          className={`${
+            theme === "dark"
+              ? `${styles.sectionSubText}`
+              : `${styles.sectionSubTextLightTheme}`
+          }}`}
+        >
+          Introduction
+        </p>
+        <h2
+          className={`${
+            theme === "dark"
+              ? `${styles.sectionHeadText}`
+              : `${styles.sectionHeadTextLightTheme}`
+          }}`}
+        >
+          Overview.
+        </h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className={`mt-4 ${
+          theme === "dark" ? "text-secondary" : "text-secondary-light-theme"
+        } text-[17px] max-w-3xl leading-[30px]`}
       >
         Passionate Frontend Developer specializing in React, Redux, CSS/Sass,
         and HTML. I excel at crafting user-focused software with an emphasis on

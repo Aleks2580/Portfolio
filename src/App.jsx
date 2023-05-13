@@ -44,7 +44,7 @@ const App = () => {
         >
           <div
             className={`${
-              theme === "dark" ? "bg-hero-pattern" : "bg-hero-pattern-white"
+              theme === "dark" ? "bg-hero-pattern" : "bg-hero-pattern-white-100"
             } bg cover bg-no-repeat bg-center`}
           >
             <Navbar />
