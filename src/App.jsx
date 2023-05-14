@@ -1,5 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import { createContext, useState } from "react";
+import LanguageDropdown from "./LanguageDropdown";
 
 import {
   About,
@@ -26,6 +27,11 @@ const App = () => {
     setTheme(newTheme);
     localStorage.setItem("theme", newTheme);
   };
+
+  const [selectedLanguage, setSelectedLanguage] = useState("EN");
+  const changeLanguage = (language) => {
+    setSelectedLanguage(language);
+  };
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <BrowserRouter>
@@ -37,6 +43,14 @@ const App = () => {
             alt="icon-theme"
           />
         </div>
+
+        <div className={style.language_dropdown}>
+          <LanguageDropdown
+            selectedLanguage={selectedLanguage}
+            changeLanguage={changeLanguage}
+          />
+        </div>
+
         <div
           className={`relative z-0 ${
             theme === "dark" ? "bg-primary" : "bg-primary-white"

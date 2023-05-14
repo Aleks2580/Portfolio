@@ -25,3 +25,10 @@
 .icon_sun:hover {
   scale: 1.2;
 }
+
+.language_dropdown {
+  position: fixed;
+  z-index: 50;
+  top: 0.5%;
+  right: 0.3%;
+}
