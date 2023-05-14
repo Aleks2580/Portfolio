@@ -3,9 +3,11 @@ import { useContext } from "react";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { ThemeContext } from "../App";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
   const { theme } = useContext(ThemeContext);
+  const { t } = useTranslation();
   return (
     <section className="relative w-full h-screen mx-auto">
       <div
@@ -24,16 +26,20 @@ const Hero = () => {
             }
             `}
           >
-            Hi, I&apos;m <span className="text-[#915eff]">Aleksei</span>
+            {t("hero.greeting")}{" "}
+            <span className="text-[#915eff]">{t("hero.name")}</span>
           </h1>
           <p
             className={`${styles.heroSubText} mt-2 ${
               theme === "dark" ? "text-white-100" : "text-black-100"
             }`}
           >
-            I strive to create software that is
+            {/* I strive to create software that is
             <br className="sm:block hidden" /> accessible, efficient, and
-            enjoyable for all users
+            enjoyable for all users */}
+            {t("hero.description1")}
+            <br className="sm:block hidden" />
+            {t("hero.description2")}
           </p>
         </div>
       </div>

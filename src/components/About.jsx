@@ -7,6 +7,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
 import { useContext } from "react";
 import { ThemeContext } from "../App";
+import { useTranslation } from "react-i18next";
 
 const ServiceCard = ({ index, icon, title }) => {
   const { theme } = useContext(ThemeContext);
@@ -34,6 +35,7 @@ const ServiceCard = ({ index, icon, title }) => {
 
 const About = () => {
   const { theme } = useContext(ThemeContext);
+  const { t } = useTranslation();
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -45,7 +47,7 @@ const About = () => {
               : `${styles.sectionSubTextLightTheme}`
           }}`}
         >
-          Introduction
+          {t("about.introduction")}
         </p>
         <h2
           className={`${
@@ -54,7 +56,7 @@ const About = () => {
               : `${styles.sectionHeadTextLightTheme}`
           }}`}
         >
-          Overview.
+          {t("about.overview")}
         </h2>
       </motion.div>
 
@@ -64,13 +66,7 @@ const About = () => {
           theme === "dark" ? "text-secondary" : "text-secondary-light-theme"
         } text-[17px] max-w-3xl leading-[30px]`}
       >
-        Passionate Frontend Developer specializing in React, Redux, CSS/Sass,
-        and HTML. I excel at crafting user-focused software with an emphasis on
-        clean design and interactivity. A strong team player, I thrive on
-        unraveling complex problems. My experience extends to Node.js and
-        PostgreSQL. I champion effective UI as the bridge between users and
-        applications, ensuring a seamless, responsive experience through sharp
-        visuals and intuitive design.
+        {t("about.passionateDeveloper")}
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

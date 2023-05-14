@@ -5,5 +5,18 @@
     "about": "关于",
     "work": "工作",
     "contact": "联系"
+  },
+
+  "hero": {
+    "greeting": "你好，我是",
+    "name": "Aleksei",
+    "description1": "我致力于为所有用户创建可访问、高效和愉悦的软件",
+    "description2": ""
+  },
+
+  "about": {
+    "introduction": "简介",
+    "overview": "概述。",
+    "passionateDeveloper": "热衷于React、Redux、CSS/Sass和HTML的前端开发人员。我擅长于制作以用户为中心的软件，注重清晰的设计和互动性。作为一个强大的团队合作者，我善于解决复杂的问题。我的经验还涉及Node.js和PostgreSQL。我倡导有效的用户界面作为用户和应用程序之间的桥梁，通过清晰的视觉效果和直观的设计确保无缝、响应式的体验。"
   }
 }
