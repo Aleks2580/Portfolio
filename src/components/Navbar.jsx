@@ -2,11 +2,14 @@ import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
-import { navLinks } from "../constants";
-import { logo1, menu, close } from "../assets";
+import { menu, close } from "../assets";
 import { ThemeContext } from "../App";
+import { useTranslation } from "react-i18next";
+import { useNavLinks } from "../constants/Translations";
 
 const Navbar = () => {
+  const { t } = useTranslation();
+  const navLinks = useNavLinks();
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const { theme } = useContext(ThemeContext);
@@ -43,8 +46,8 @@ const Navbar = () => {
               theme === "dark" ? "text-white" : "text-black-100"
             } text-[18px] font-bold cursor-pointer flex`}
           >
-            Aleksei Vlasov &nbsp;
-            <span className="sm:block hidden"> | Frontend Developer</span>
+            {t("navbar.name")} &nbsp;
+            <span className="sm:block hidden"> | {t("navbar.role")}</span>
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">

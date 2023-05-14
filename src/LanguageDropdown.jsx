@@ -16,14 +16,14 @@ const LanguageDropdown = ({ selectedLanguage, changeLanguage }) => {
     <div className="relative">
       <button
         type="button"
-        className="flex items-center px-3 py-2 text-sm font-medium text-white bg-gray-800 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+        className="flex items-center px-1.5 py-1 text-xs font-medium text-white bg-gray-800 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
         onClick={toggleDropdown}
       >
         {selectedLanguage}
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-40 bg-white rounded-md shadow-lg">
+        <div className="absolute right-0 mt-2 w-20 bg-white rounded-md shadow-lg">
           <div className="py-1">
             <button
               type="button"

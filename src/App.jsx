@@ -1,6 +1,8 @@
 import { BrowserRouter } from "react-router-dom";
 import { createContext, useState } from "react";
 import LanguageDropdown from "./LanguageDropdown";
+import { useTranslation } from "react-i18next";
+import i18n from "i18next";
 
 import {
   About,
@@ -28,10 +30,16 @@ const App = () => {
     localStorage.setItem("theme", newTheme);
   };
 
-  const [selectedLanguage, setSelectedLanguage] = useState("EN");
+  const [selectedLanguage, setSelectedLanguage] = useState(
+    localStorage.getItem("language") || "EN"
+  );
   const changeLanguage = (language) => {
+    localStorage.setItem("language", language);
     setSelectedLanguage(language);
+    i18n.changeLanguage(language);
   };
+
+  console.log(selectedLanguage);
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <BrowserRouter>
