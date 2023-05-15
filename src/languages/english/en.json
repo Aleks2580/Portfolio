@@ -16,5 +16,9 @@
     "introduction": "Introduction",
     "overview": "Overview.",
     "passionateDeveloper": "Passionate Frontend Developer specializing in React, Redux, CSS/Sass, and HTML. I excel at crafting user-focused software with an emphasis on clean design and interactivity. A strong team player, I thrive on unraveling complex problems. My experience extends to Node.js and PostgreSQL. I champion effective UI as the bridge between users and applications, ensuring a seamless, responsive experience through sharp visuals and intuitive design."
+  },
+  "work": {
+    "introduction": "What I have done so far",
+    "overview": "Work Experience."
   }
 }
