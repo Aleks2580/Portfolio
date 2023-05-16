@@ -1,4 +1,4 @@
-import logo1 from "./logo1.png";
+// import logo1 from "./logo1.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -20,6 +20,8 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import postgresql from "./tech/postgresql.png";
+import antdesign from "./tech/ant.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -31,7 +33,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
-  logo1,
+  // logo1,
   backend,
   creator,
   mobile,
@@ -42,6 +44,8 @@ export {
   css,
   docker,
   figma,
+  postgresql,
+  antdesign,
   git,
   html,
   javascript,

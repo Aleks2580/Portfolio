@@ -4,17 +4,14 @@ import {
   creator,
   web,
   javascript,
-  typescript,
+  antdesign,
   html,
   css,
   reactjs,
   redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
-  figma,
-  docker,
   meta,
   starbucks,
   tesla,
@@ -23,6 +20,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  postgresql,
 } from "../assets";
 
 export const navLinks = [
@@ -72,10 +70,7 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+
   {
     name: "React JS",
     icon: reactjs,
@@ -93,8 +88,8 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "PostgreSQL",
+    icon: postgresql,
   },
   {
     name: "Three JS",
@@ -105,12 +100,8 @@ const technologies = [
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
+    name: "antdesign",
+    icon: antdesign,
   },
 ];
 
