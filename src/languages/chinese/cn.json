@@ -22,5 +22,20 @@
   "work": {
     "introduction": "我到目前为止做了什么",
     "overview": "工作经验。"
+  },
+  "experience": {
+    "title1": "前端开发者",
+    "company_name1": "自由职业者",
+    "date1": "2021年10月 - 2021年4月",
+    "point1": "构建了强调用户参与和功能性的交互式网络应用。",
+    "point2": "设计并实现了用户体验，将交互性和数据结构与业务需求相结合。",
+    "point3": "使用了包括HTML，CSS，SASS，Bootstrap，Material UI，Ant Design，JavaScript，React，Redux，Tailwind，Three.js，Node.js和PostgreSQL在内的多样化技术栈。",
+    "point4": "确保了跨浏览器兼容性和响应式设计，为所有平台提供了无缝的用户体验。",
+    "title2": "助理经理",
+    "company_name2": "Golden Vault Financial Consulting Co., Ltd, 上海",
+    "date2": "2018年8月 - 2021年9月",
+    "point5": "与外国公司进行沟通，为业务管理和进入中国市场提供咨询。",
+    "point6": "负责为在中国经营业务的俄罗斯公司提供咨询支持。",
+    "point7": "与网站工程师有效沟通，建立英文和俄文网站以增加互联网流量。"
   }
 }

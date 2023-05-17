@@ -20,5 +20,20 @@
   "work": {
     "introduction": "What I have done so far",
     "overview": "Work Experience."
+  },
+  "experience": {
+    "title1": "Frontend Developer",
+    "company_name1": "Freelance",
+    "date1": "Oct 2021 - April 2021",
+    "point1": "Built interactive web applications, emphasizing user engagement and functionality.",
+    "point2": "Designed and implemented user experiences, aligning interactivity and data structures with business requirements.",
+    "point3": "Utilized a diverse technical stack, including HTML, CSS, SASS, Bootstrap, Material UI, Ant Design, JavaScript, React, Redux, Tailwind, Three.js, Node.js, and PostgreSQL.",
+    "point4": "Ensured cross-browser compatibility and responsive design, providing seamless user experiences across all platforms.",
+    "title2": "Assistant Manager",
+    "company_name2": "Golden Vault Financial Consulting Co., Ltd, Shanghai",
+    "date2": "Aug 2018 - Sep 2021",
+    "point5": "Communicated with foreign companies for consultancy in business management and entering the Chinese market.",
+    "point6": "Was responsible for consulting support to Russian companies with business in China.",
+    "point7": "Efficiently communicated with website engineers, building the English and Russian websites in order to increase internet traffic."
   }
 }
