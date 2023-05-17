@@ -21,6 +21,9 @@ import {
   tripguide,
   threejs,
   postgresql,
+  rms,
+  emarket,
+  jetSearch,
 } from "../assets";
 
 export const navLinks = [
@@ -206,7 +209,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: jetSearch,
     source_code_link: "https://github.com/",
   },
   {
@@ -227,7 +230,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: rms,
     source_code_link: "https://github.com/",
   },
   {
@@ -248,7 +251,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: emarket,
     source_code_link: "https://github.com/",
   },
 ];

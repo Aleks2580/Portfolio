@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { createContext, useState } from "react";
 import LanguageDropdown from "./LanguageDropdown";
-import { useTranslation } from "react-i18next";
+import { Route, Routes } from "react-router-dom";
 import i18n from "i18next";
 
 import {
@@ -66,7 +66,7 @@ const App = () => {
         >
           <div
             className={`${
-              theme === "dark" ? "bg-hero-pattern" : "bg-hero-pattern-white-100"
+              theme === "dark" ? "bg-hero-pattern" : "bg-hero-pattern-white"
             } bg cover bg-no-repeat bg-center`}
           >
             <Navbar />
@@ -75,7 +75,13 @@ const App = () => {
           <About />
           <Experience />
           <Tech />
+          {/* <Routes>
+            <Route path="/work" element={<Works />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+          </Routes> */}
           <Works />
+          <Contact />
+
           <Feedbacks />
           <div className="relative z-0">
             <Contact />

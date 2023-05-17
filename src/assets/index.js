@@ -32,9 +32,15 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import rms from "./rms.png";
+import jetSearch from "./jetSearch.png";
+import emarket from "./emarket.png";
 
 export {
   // logo1,
+  rms,
+  jetSearch,
+  emarket,
   assistant,
   frontend,
   backend,
