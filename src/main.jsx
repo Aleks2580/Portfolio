@@ -4,15 +4,18 @@ import App from "./App";
 import "./index.css";
 import i18n from "./i18n";
 import { I18nextProvider } from "react-i18next";
+import { BrowserRouter } from "react-router-dom";
 
 const rootElement = document.getElementById("root");
 
 const renderApp = () => {
   ReactDOM.createRoot(rootElement).render(
     <React.StrictMode>
-      <I18nextProvider i18n={i18n}>
-        <App />
-      </I18nextProvider>
+      <BrowserRouter>
+        <I18nextProvider i18n={i18n}>
+          <App />
+        </I18nextProvider>
+      </BrowserRouter>
     </React.StrictMode>
   );
 };
@@ -23,9 +26,11 @@ if (ReactDOM.createRoot) {
 } else {
   ReactDOM.render(
     <React.StrictMode>
-      <I18nextProvider i18n={i18n}>
-        <App />
-      </I18nextProvider>
+      <BrowserRouter>
+        <I18nextProvider i18n={i18n}>
+          <App />
+        </I18nextProvider>
+      </BrowserRouter>
     </React.StrictMode>,
     rootElement
   );

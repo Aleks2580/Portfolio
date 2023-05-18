@@ -39,56 +39,55 @@ const App = () => {
     i18n.changeLanguage(language);
   };
 
-  console.log(selectedLanguage);
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <BrowserRouter>
-        <div className={style.icon_div}>
-          <img
-            onClick={toggleTheme}
-            className={theme === "dark" ? style.icon_moon : style.icon_sun}
-            src={theme === "dark" ? lightIcon : darkIcon}
-            alt="icon-theme"
-          />
-        </div>
+      {/* <BrowserRouter> */}
+      <div className={style.icon_div}>
+        <img
+          onClick={toggleTheme}
+          className={theme === "dark" ? style.icon_moon : style.icon_sun}
+          src={theme === "dark" ? lightIcon : darkIcon}
+          alt="icon-theme"
+        />
+      </div>
 
-        <div className={style.language_dropdown}>
-          <LanguageDropdown
-            selectedLanguage={selectedLanguage}
-            changeLanguage={changeLanguage}
-          />
-        </div>
+      <div className={style.language_dropdown}>
+        <LanguageDropdown
+          selectedLanguage={selectedLanguage}
+          changeLanguage={changeLanguage}
+        />
+      </div>
 
+      <div
+        className={`relative z-0 ${
+          theme === "dark" ? "bg-primary" : "bg-primary-white"
+        }`}
+      >
         <div
-          className={`relative z-0 ${
-            theme === "dark" ? "bg-primary" : "bg-primary-white"
-          }`}
+          className={`${
+            theme === "dark" ? "bg-hero-pattern" : "bg-hero-pattern-white"
+          } bg cover bg-no-repeat bg-center`}
         >
-          <div
-            className={`${
-              theme === "dark" ? "bg-hero-pattern" : "bg-hero-pattern-white"
-            } bg cover bg-no-repeat bg-center`}
-          >
-            <Navbar />
-            <Hero />
-          </div>
-          <About />
-          <Experience />
-          <Tech />
-          {/* <Routes>
-            <Route path="/work" element={<Works />}></Route>
-            <Route path="/contact" element={<Contact />}></Route>
-          </Routes> */}
-          <Works />
-          <Contact />
-
-          <Feedbacks />
-          <div className="relative z-0">
-            <Contact />
-            <StarsCanvas />
-          </div>
+          <Navbar />
+          <Hero />
         </div>
-      </BrowserRouter>
+        <About />
+        <Experience />
+        <Tech />
+        {/* <Routes>
+          <Route path="work" element={<Works />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+        </Routes> */}
+        <Works />
+        <Contact />
+
+        <Feedbacks />
+        <div className="relative z-0">
+          <Contact />
+          <StarsCanvas />
+        </div>
+      </div>
+      {/* </BrowserRouter> */}
     </ThemeContext.Provider>
   );
 };
