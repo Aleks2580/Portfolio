@@ -35,9 +35,13 @@ import tripguide from "./tripguide.png";
 import rms from "./rms.png";
 import jetSearch from "./jetSearch.png";
 import emarket from "./emarket.png";
+import cocktails from "./cocktails.png";
+import omnifood from "./omnifood.png";
 
 export {
   // logo1,
+  cocktails,
+  omnifood,
   rms,
   jetSearch,
   emarket,
