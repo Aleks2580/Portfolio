@@ -4,12 +4,13 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
+//import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
 import { useContext } from "react";
 import { ThemeContext } from "../App";
 import { useTranslation } from "react-i18next";
+import { useWorks } from "../constants/TranslationWorks";
 
 const ProjectCard = ({
   index,
@@ -65,6 +66,7 @@ const ProjectCard = ({
 const Works = () => {
   const { theme } = useContext(ThemeContext);
   const { t } = useTranslation();
+  const projects = useWorks();
   return (
     <>
       <motion.div variants={textVariant()}>

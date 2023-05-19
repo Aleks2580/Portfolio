@@ -35,5 +35,12 @@
     "point5": "Communicated with foreign companies for consultancy in business management and entering the Chinese market.",
     "point6": "Was responsible for consulting support to Russian companies with business in China.",
     "point7": "Efficiently communicated with website engineers, building the English and Russian websites in order to increase internet traffic."
+  },
+  "projects": {
+    "jetsearch": "A comprehensive travel booking platform that is still under development. It allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    "rms": "Restaurant Management System is a comprehensive and fully responsive software solution designed to streamline restaurant operations. It offers a wide range of features that facilitate efficient management of various aspects such as order processing, menu customization, reservations, and reporting.",
+    "emarket": "An e-commerce website that provides a user-friendly platform for buying and selling products online.",
+    "cocktails": "A sophisticated and user-friendly cocktail recipe finder app, designed with the latest web development technologies.",
+    "food": "A food subscription landing page built with HTML, CSS, and JavaScript. It is fully responsive and has a mobile-friendly design."
   }
 }
