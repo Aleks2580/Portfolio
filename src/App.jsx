@@ -79,7 +79,7 @@ const App = () => {
           <Route path="/contact" element={<Contact />}></Route>
         </Routes> */}
         <Works />
-        <Contact />
+        {/* <Contact /> */}
 
         <Feedbacks />
         <div className="relative z-0">
