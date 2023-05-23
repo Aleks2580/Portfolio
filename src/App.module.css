@@ -8,7 +8,7 @@
 .icon_moon {
   width: 30px;
   height: 30px;
-  filter: brightness(1) invert(1);
+  /* filter: brightness(1) invert(1); */
   margin: 5px;
 }
 

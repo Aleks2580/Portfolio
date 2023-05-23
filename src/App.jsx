@@ -1,14 +1,11 @@
-import { BrowserRouter } from "react-router-dom";
 import { createContext, useState } from "react";
 import LanguageDropdown from "./LanguageDropdown";
-import { Route, Routes } from "react-router-dom";
 import i18n from "i18next";
 
 import {
   About,
   Contact,
   Experience,
-  Feedbacks,
   Hero,
   Navbar,
   Tech,
@@ -17,8 +14,8 @@ import {
 } from "./components";
 
 import style from "./App.module.css";
-import lightIcon from "./assets/moon.png";
-import darkIcon from "./assets/sun.png";
+import lightIcon from "./assets/full-moon.png";
+import darkIcon from "./assets/dark.png";
 
 export const ThemeContext = createContext(null);
 
@@ -41,7 +38,6 @@ const App = () => {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      {/* <BrowserRouter> */}
       <div className={style.icon_div}>
         <img
           onClick={toggleTheme}
@@ -74,20 +70,12 @@ const App = () => {
         <About />
         <Experience />
         <Tech />
-        {/* <Routes>
-          <Route path="work" element={<Works />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-        </Routes> */}
         <Works />
-        {/* <Contact /> */}
-
-        <Feedbacks />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
         </div>
       </div>
-      {/* </BrowserRouter> */}
     </ThemeContext.Provider>
   );
 };

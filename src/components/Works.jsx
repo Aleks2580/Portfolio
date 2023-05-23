@@ -77,7 +77,7 @@ const Works = () => {
               : `${styles.sectionSubTextLightTheme}`
           }}`}
         >
-          {t("work.introduction")}
+          {t("projects.subtitle")}
         </p>
         <h2
           className={`${
@@ -86,7 +86,7 @@ const Works = () => {
               : `${styles.sectionHeadTextLightTheme}`
           }}`}
         >
-          {t("work.overview")}
+          {t("projects.title")}
         </h2>
       </motion.div>
       <div className="w-full flex">
@@ -94,8 +94,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Following projects showcase my skills and experiences through
-          real-word examples of my work.
+          {t("projects.text")}
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">

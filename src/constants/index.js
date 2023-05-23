@@ -16,9 +16,6 @@ import {
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   postgresql,
   rms,
@@ -45,19 +42,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Strong Technical Skills",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Design Aptitude",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Adaptability",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Analytical Thinking",
     icon: creator,
   },
 ];

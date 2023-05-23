@@ -37,6 +37,9 @@
     "point7": "Efficiently communicated with website engineers, building the English and Russian websites in order to increase internet traffic."
   },
   "projects": {
+    "subtitle": "My work",
+    "title": "Projects.",
+    "text": "Following projects showcase my skills and experiences through real-word examples of my work.",
     "jetsearch": "A comprehensive travel booking platform that is still under development. It allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     "rms": "Restaurant Management System is a comprehensive and fully responsive software solution designed to streamline restaurant operations. It offers a wide range of features that facilitate efficient management of various aspects such as order processing, menu customization, reservations, and reporting.",
     "emarket": "An e-commerce website that provides a user-friendly platform for buying and selling products online.",
