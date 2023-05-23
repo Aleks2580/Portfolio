@@ -8,7 +8,7 @@
 .icon_moon {
   width: 30px;
   height: 30px;
-  /* filter: brightness(1) invert(1); */
+  filter: brightness(1) invert(1);
   margin: 5px;
 }
 
@@ -31,4 +31,23 @@
   z-index: 50;
   top: 0.5%;
   right: 0.3%;
+}
+
+@media only screen and (max-width: 600px) {
+  .icon_sun {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+  }
+
+  .icon_moon {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+  }
+  .language_dropdown {
+    position: fixed;
+    top: 0.5%;
+    right: 0.3%;
+  }
 }

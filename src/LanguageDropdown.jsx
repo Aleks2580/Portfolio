@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import style from "./LanguageDropdown.module.css";
 
 const LanguageDropdown = ({ selectedLanguage, changeLanguage }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ const LanguageDropdown = ({ selectedLanguage, changeLanguage }) => {
     <div className="relative">
       <button
         type="button"
-        className="flex items-center px-1.5 py-1 text-xs font-medium text-white bg-gray-800 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+        className={`${style.button} flex items-center px-1.5 py-1 text-xs font-medium text-white bg-gray-800 rounded-md focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500`}
         onClick={toggleDropdown}
       >
         {selectedLanguage}

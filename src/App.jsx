@@ -14,8 +14,8 @@ import {
 } from "./components";
 
 import style from "./App.module.css";
-import lightIcon from "./assets/full-moon.png";
-import darkIcon from "./assets/dark.png";
+import lightIcon from "./assets/moon.png";
+import darkIcon from "./assets/day.png";
 
 export const ThemeContext = createContext(null);
 
