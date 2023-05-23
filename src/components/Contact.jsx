@@ -24,9 +24,6 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    //M0rIOvWqiYL3KNJMN
-    //template_h0yerqu
-    //service_17asbqj
     emailjs
       .send(
         "service_17asbqj",
@@ -67,44 +64,50 @@ const Contact = () => {
               : `${styles.sectionSubTextLightTheme}`
           }}`}
         >
-          {t("work.introduction")}
+          {t("contact.get")}
         </p>
-        <h3 className={styles.sectionHeadText}>{t("work.overview")}</h3>
+        <h3 className={styles.sectionHeadText}>{t("contact.contact")}</h3>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
         >
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Name</span>
+            <span className="text-white font-medium mb-4">
+              {t("contact.name")}
+            </span>
             <input
               type="text"
               name="name"
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your name?"
+              placeholder={t("contact.type_name")}
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Email</span>
+            <span className="text-white font-medium mb-4">
+              {t("contact.email")}
+            </span>
             <input
               type="text"
               name="email"
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your email?"
+              placeholder={t("contact.type_email")}
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Message</span>
+            <span className="text-white font-medium mb-4">
+              {t("contact.message")}
+            </span>
             <textarea
               rows="7"
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What do you want to say?"
+              placeholder={t("contact.type_message")}
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
@@ -112,7 +115,7 @@ const Contact = () => {
             type="submit"
             className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
           >
-            {loading ? "Sending..." : "Send"}
+            {loading ? `${t("contact.sending")}` : `${t("contact.send")}`}
           </button>
         </form>
       </motion.div>

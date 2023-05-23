@@ -45,5 +45,17 @@
     "emarket": "An e-commerce website that provides a user-friendly platform for buying and selling products online.",
     "cocktails": "A sophisticated and user-friendly cocktail recipe finder app, designed with the latest web development technologies.",
     "food": "A food subscription landing page built with HTML, CSS, and JavaScript. It is fully responsive and has a mobile-friendly design."
+  },
+  "contact": {
+    "get": "Get in touch",
+    "contact": "Contact.",
+    "name": "Your Name",
+    "type_name": "What's your name?",
+    "email": "Your Email",
+    "type_email": "What's your email?",
+    "message": "Your Message",
+    "type_message": "What do you want to say?",
+    "send": "Send",
+    "sending": "Sending..."
   }
 }
