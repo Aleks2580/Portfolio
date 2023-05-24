@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import style from "./LanguageDropdown.module.css";
 
+import uk from "./assets/uk.png";
+import russia from "./assets/russia.png";
+import china from "./assets/china.png";
+
 const LanguageDropdown = ({ selectedLanguage, changeLanguage }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -33,7 +37,10 @@ const LanguageDropdown = ({ selectedLanguage, changeLanguage }) => {
               } block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900`}
               onClick={() => handleLanguageChange("EN")}
             >
-              EN
+              <div className="flex items-center content-center">
+                <img src={uk} alt="uk" className={style.flag} />
+                <span className="ml-2">EN</span>
+              </div>
             </button>
             <button
               type="button"
@@ -42,7 +49,10 @@ const LanguageDropdown = ({ selectedLanguage, changeLanguage }) => {
               } block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900`}
               onClick={() => handleLanguageChange("RU")}
             >
-              RU
+              <div className="flex items-center content-center">
+                <img src={russia} alt="uk" className={style.flag} />
+                <span className="ml-2">RU</span>
+              </div>
             </button>
             <button
               type="button"
@@ -51,7 +61,10 @@ const LanguageDropdown = ({ selectedLanguage, changeLanguage }) => {
               } block w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900`}
               onClick={() => handleLanguageChange("CN")}
             >
-              CN
+              <div className="flex items-center content-center">
+                <img src={china} alt="uk" className={style.flag} />
+                <span className="ml-2">CN</span>
+              </div>
             </button>
           </div>
         </div>

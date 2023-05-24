@@ -35,19 +35,18 @@
 
 @media only screen and (max-width: 600px) {
   .icon_sun {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     margin: 5px;
   }
 
   .icon_moon {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     margin: 5px;
   }
   .language_dropdown {
-    position: fixed;
-    top: 0.5%;
+    top: 0.1%;
     right: 0.3%;
   }
 }

@@ -1,8 +1,15 @@
+.flag {
+  width: 25px;
+}
+
 @media only screen and (max-width: 600px) {
   .button {
-    width: 25px;
-    height: 20px;
-    text-align: center;
-    font-size: 10px;
+    width: 18px;
+    height: 18px;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px !important;
+    background-color: transparent !important;
+    color: rgba(0, 0, 0, 0.72) !important;
   }
 }
