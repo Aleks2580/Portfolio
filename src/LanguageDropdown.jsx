@@ -50,7 +50,7 @@ const LanguageDropdown = ({ selectedLanguage, changeLanguage }) => {
               onClick={() => handleLanguageChange("RU")}
             >
               <div className="flex items-center content-center">
-                <img src={russia} alt="uk" className={style.flag} />
+                <img src={russia} alt="ru" className={style.flag} />
                 <span className="ml-2">RU</span>
               </div>
             </button>
@@ -62,7 +62,7 @@ const LanguageDropdown = ({ selectedLanguage, changeLanguage }) => {
               onClick={() => handleLanguageChange("CN")}
             >
               <div className="flex items-center content-center">
-                <img src={china} alt="uk" className={style.flag} />
+                <img src={china} alt="cn" className={style.flag} />
                 <span className="ml-2">CN</span>
               </div>
             </button>

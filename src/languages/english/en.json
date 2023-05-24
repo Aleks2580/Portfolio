@@ -56,6 +56,9 @@
     "message": "Your Message",
     "type_message": "What do you want to say?",
     "send": "Send",
-    "sending": "Sending..."
+    "sending": "Sending...",
+    "messageOk": "Thank you! I will get back to you soon.",
+    "messageError": "Something went wrong",
+    "messageWarning": "Fields cannot be empty"
   }
 }

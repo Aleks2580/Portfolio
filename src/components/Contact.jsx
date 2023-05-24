@@ -9,6 +9,7 @@ import { slideIn } from "../utils/motion";
 import { useContext } from "react";
 import { ThemeContext } from "../App";
 import { useTranslation } from "react-i18next";
+import { message } from "antd";
 
 const Contact = () => {
   const formRef = useRef();
@@ -16,6 +17,7 @@ const Contact = () => {
   const [loading, setLoading] = useState(false);
   const { theme } = useContext(ThemeContext);
   const { t } = useTranslation();
+  const [messageApi, contextHolder] = message.useMessage();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,36 +25,51 @@ const Contact = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
-    emailjs
-      .send(
-        "service_17asbqj",
-        "template_h0yerqu",
-        {
-          from_name: form.name,
-          to_name: "Aleksei",
-          from_email: form.email,
-          to_email: "aleks101989@mail.ru",
-          message: form.message,
-        },
-        "M0rIOvWqiYL3KNJMN"
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you! I will get back to you soon.");
-          setFrom({ name: "", email: "", message: "" });
-        },
-        (error) => {
-          setLoading(false);
-          console.log(error);
-          alert("Something went wrong.");
-        }
-      );
+
+    if (!form.name || !form.email || !form.message) {
+      messageApi.open({
+        type: "warning",
+        content: `${t("contact.messageWarning")}`,
+      });
+    } else {
+      setLoading(true);
+      emailjs
+        .send(
+          "service_17asbqj",
+          "template_h0yerqu",
+          {
+            from_name: form.name,
+            to_name: "Aleksei",
+            from_email: form.email,
+            to_email: "aleks101989@mail.ru",
+            message: form.message,
+          },
+          "M0rIOvWqiYL3KNJMN"
+        )
+        .then(
+          () => {
+            setLoading(false);
+            messageApi.open({
+              type: "success",
+              content: `${t("contact.messageOk")}`,
+            });
+            setFrom({ name: "", email: "", message: "" });
+          },
+          (error) => {
+            setLoading(false);
+            console.log(error);
+            messageApi.open({
+              type: "error",
+              content: `${t("contact.messageError")}`,
+            });
+          }
+        );
+    }
   };
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+      {contextHolder}
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"

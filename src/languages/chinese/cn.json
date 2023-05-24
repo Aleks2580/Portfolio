@@ -58,6 +58,9 @@
     "message": "您的留言",
     "type_message": "请告诉我们您想说的话",
     "send": "发送",
-    "sending": "发送中..."
+    "sending": "发送中...",
+    "messageOk": "谢谢！我会尽快回复您。",
+    "messageError": "出了些问题。",
+    "messageWarning": "字段不能为空。"
   }
 }
