@@ -9,13 +9,13 @@
   "hero": {
     "greeting": "Hi, I'm",
     "name": "Aleksei",
-    "description1": "I strive to create software that is",
-    "description2": "accessible, efficient, and enjoyable for all users"
+    "description1": "I am dedicated to developing software that is accessible,",
+    "description2": "efficient, and enjoyable for users of all backgrounds."
   },
   "about": {
     "introduction": "Introduction",
     "overview": "Overview.",
-    "passionateDeveloper": "Passionate Frontend Developer specializing in React, Redux, CSS/Sass, and HTML. I excel at crafting user-focused software with an emphasis on clean design and interactivity. A strong team player, I thrive on unraveling complex problems. My experience extends to Node.js and PostgreSQL. I champion effective UI as the bridge between users and applications, ensuring a seamless, responsive experience through sharp visuals and intuitive design."
+    "passionateDeveloper": "I am a passionate Frontend Developer who specializes in React & JavaScript. I enjoy creating user-friendly software with clean design and interactivity. I work well in teams and have a knack for solving complex problems. Additionally, I have experience with Node.js and PostgreSQL. My focus is on crafting effective UI that connects users with applications, providing a seamless and responsive experience through visually appealing and intuitive design."
   },
   "work": {
     "introduction": "What I have done so far",
@@ -40,9 +40,9 @@
     "subtitle": "My work",
     "title": "Projects.",
     "text": "Following projects showcase my skills and experiences through real-word examples of my work.",
-    "jetsearch": "A comprehensive travel booking platform that is still under development. It allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    "jetsearch": "A comprehensive travel booking platform(under development). It allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     "rms": "Restaurant Management System is a comprehensive and fully responsive software solution designed to streamline restaurant operations. It offers a wide range of features that facilitate efficient management of various aspects such as order processing, menu customization, reservations, and reporting.",
-    "emarket": "An e-commerce website that provides a user-friendly platform for buying and selling products online.",
+    "emarket": "An e-commerce website that provides a user-friendly platform for buying and selling products online. It includes personal accounts for the administrator, buyer, and seller.",
     "cocktails": "A sophisticated and user-friendly cocktail recipe finder app, designed with the latest web development technologies.",
     "food": "A food subscription landing page built with HTML, CSS, and JavaScript. It is fully responsive and has a mobile-friendly design."
   },
