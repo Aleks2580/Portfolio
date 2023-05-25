@@ -35,9 +35,6 @@ const Hero = () => {
               theme === "dark" ? "text-white-100" : "text-black-100"
             }`}
           >
-            {/* I strive to create software that is
-            <br className="sm:block hidden" /> accessible, efficient, and
-            enjoyable for all users */}
             {t("hero.description1")}
             <br className="sm:block hidden" />
             {t("hero.description2")}
