@@ -23,7 +23,7 @@ export default defineConfig({
       external: ["i18next"],
       output: {
         globals: {
-          i18next: "i18next", // Specify the global variable name for "i18next"
+          i18n: "i18next", // Specify the global variable name for "i18next"
         },
       },
     },
