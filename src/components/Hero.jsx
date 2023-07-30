@@ -4,7 +4,6 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { ThemeContext } from "../App";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 
 const Hero = () => {
   const { theme } = useContext(ThemeContext);

@@ -1,4 +1,3 @@
-// import logo1 from "./logo1.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -24,19 +23,15 @@ import threejs from "./tech/threejs.svg";
 import postgresql from "./tech/postgresql.png";
 import antdesign from "./tech/ant.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import rms from "./rms.png";
-import jetSearch from "./jetSearch.png";
-import emarket from "./emarket.png";
-import cocktails from "./cocktails.png";
-import omnifood from "./omnifood.png";
+import rms from "./rms.jpg";
+import jetSearch from "./jetSearch.jpg";
+import emarket from "./emarket.jpg";
+import cocktails from "./cocktails.jpg";
+import omnifood from "./omnifood.jpg";
+import dmk from "./dmk.jpg";
 
 export {
-  // logo1,
+  dmk,
   cocktails,
   omnifood,
   rms,
@@ -66,8 +61,4 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
 };

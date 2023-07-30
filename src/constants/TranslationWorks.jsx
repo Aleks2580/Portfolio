@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { jetSearch, rms, emarket, cocktails, omnifood } from "../assets";
+import { jetSearch, rms, emarket, cocktails, omnifood, dmk } from "../assets";
 
 export const useWorks = () => {
   const { t } = useTranslation();
@@ -23,6 +23,26 @@ export const useWorks = () => {
         },
       ],
       image: jetSearch,
+      // source_code_link: "https://github.com/",
+    },
+    {
+      name: "DMK official website",
+      description: `${t("projects.dmk")}`,
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "motion",
+          color: "green-text-gradient",
+        },
+        {
+          name: "antdesign",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: dmk,
       // source_code_link: "https://github.com/",
     },
     {

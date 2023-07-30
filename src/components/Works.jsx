@@ -33,7 +33,7 @@ const ProjectCard = ({
           />
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            {index !== 0 ? (
+            {index !== 0 && index !== 1 ? (
               <div
                 onClick={() => {
                   window.open(source_code_link, "_blank");
