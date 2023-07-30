@@ -23,7 +23,6 @@ export const useWorks = () => {
         },
       ],
       image: jetSearch,
-      // source_code_link: "https://github.com/",
     },
     {
       name: "DMK official website",

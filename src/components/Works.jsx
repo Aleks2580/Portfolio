@@ -1,13 +1,12 @@
 import { Tilt } from "react-tilt";
-import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { fadeInProjects, textVariant } from "../utils/motion";
 import { useContext } from "react";
 import { ThemeContext } from "../App";
 import { useTranslation } from "react-i18next";
 import { useWorks } from "../constants/TranslationWorks";
+import { Zoom } from "react-awesome-reveal";
 
 const ProjectCard = ({
   index,
@@ -18,7 +17,7 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeInProjects("up", "spring", index * 0.5, 0.75)}>
+    <Zoom delay="30">
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
@@ -62,7 +61,7 @@ const ProjectCard = ({
           ))}
         </div>
       </Tilt>
-    </motion.div>
+    </Zoom>
   );
 };
 
@@ -72,7 +71,7 @@ const Works = () => {
   const projects = useWorks();
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <Zoom delay="30">
         <p
           className={`${
             theme === "dark"
@@ -91,14 +90,14 @@ const Works = () => {
         >
           {t("projects.title")}
         </h2>
-      </motion.div>
+      </Zoom>
       <div className="w-full flex">
-        <motion.p
-          variants={fadeInProjects("", "", 0.1, 1)}
+        <Zoom
+          delay="30"
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           {t("projects.text")}
-        </motion.p>
+        </Zoom>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
