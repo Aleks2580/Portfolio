@@ -1,7 +1,6 @@
 import { createContext, useState } from "react";
 import LanguageDropdown from "./LanguageDropdown";
 import i18n from "i18next";
-import TawkMessengerReact from "@tawk.to/tawk-messenger-react";
 
 import {
   About,
@@ -39,10 +38,6 @@ const App = () => {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <TawkMessengerReact
-        propertyId="64d5bee6cc26a871b02e9554"
-        widgetId="1h7hf3e0i"
-      />
       <div className={style.icon_div}>
         <img
           onClick={toggleTheme}
