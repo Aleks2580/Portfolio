@@ -35,13 +35,13 @@ const Contact = () => {
       setLoading(true);
       emailjs
         .send(
-          "service_17asbqj",
+          "service_rpyqyim",
           "template_h0yerqu",
           {
             from_name: form.name,
             to_name: "Aleksei",
             from_email: form.email,
-            to_email: "aleks101989@mail.ru",
+            to_email: "dev@alekseivlasov.com",
             message: form.message,
           },
           "M0rIOvWqiYL3KNJMN"
